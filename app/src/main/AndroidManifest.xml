@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.uconvert">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shreekrsnaicon"
+        android:label="Konvert"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".length_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="length"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".weight_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="weight"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".time_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="time"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".temperature_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="temperature"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".square_measure_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="square measure"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".cubic_volume_converter"
+            android:parentActivityName=".MainActivity"
+            android:label="volume measure"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+    </application>
+</manifest>

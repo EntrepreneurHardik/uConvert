@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.uconvert.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/my_toolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#009688"
+            android:elevation="8sp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/my_toolbar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:paddingTop="42sp"
+                android:text="K"
+                android:textAlignment="center"
+                android:textSize="112sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="98sp"
+                android:paddingBottom="36sp"
+                android:text="Select a conversion"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="36sp" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/lengths"
+                android:onClick="initialize_length_converter"
+                android:text="lengths" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/weights_icon"
+                android:onClick="initialize_weight_converter"
+                android:text="weights" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/time"
+                android:onClick="initialize_time_converter"
+                android:text="time" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/temp"
+                android:onClick="initialize_temperature_converter"
+                android:text="temperatures" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/square_measures"
+                android:onClick="initialize_square_measure_converter"
+                android:text="square measures" />
+
+            <Button
+                style="@style/Button_main"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="#E0F2F1"
+                android:drawableLeft="@drawable/cubic"
+                android:onClick="initialize_cubic_volume_converter"
+                android:text="volume measures" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
